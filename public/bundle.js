@@ -13321,17 +13321,16 @@ object-assign
         (w.background = new d.Color(0)),
         w.add(E);
       var t = new d.PointLight(16777215);
+      const imgURL =
+        "https://cdn.jsdelivr.net/gh/sebaaismail/donateInGlobe/public/land_ocean_ice_cloud_2048_indexed.jpg";
       (t.position.x = 10), (t.position.y = 50), (t.position.z = 400), w.add(t);
       var n = new d.Group();
       w.add(n),
-        new d.TextureLoader().load(
-          "https://cdn.jsdelivr.net/gh/sebaaismail/donateInGlobe/public/land_ocean_ice_cloud_2048_indexed.jpg",
-          function (e) {
-            var t = new d.SphereGeometry(y, _, b),
-              r = new d.MeshBasicMaterial({ map: e, overdraw: 0.5 });
-            (T = new d.Mesh(t, r)), n.add(T);
-          }
-        ),
+        new d.TextureLoader().load(imgURL, function (e) {
+          var t = new d.SphereGeometry(y, _, b),
+            r = new d.MeshBasicMaterial({ map: e, overdraw: 0.5 });
+          (T = new d.Mesh(t, r)), n.add(T);
+        }),
         (n.position.z = -300),
         (M = new d.WebGLRenderer()),
         M.setSize(window.innerWidth, window.innerHeight),
