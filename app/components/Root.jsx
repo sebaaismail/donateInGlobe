@@ -108,7 +108,8 @@ function init() {
   loader.load(
     //"https://commons.wikimedia.org/wiki/File:Land_ocean_ice_2048.jpg",
     //"land_ocean_ice_cloud_2048.jpg",
-    "land_ocean_ice_cloud_2048_indexed.jpg",
+    //"land_ocean_ice_cloud_2048_indexed.jpg",
+    "https://cdn.jsdelivr.net/gh/sebaaismail/donateInGlobe/public/land_ocean_ice_cloud_2048_indexed.jpg",
     function (texture) {
       //create the sphere
       var sphere = new THREE.SphereGeometry(RADIUS, SEGMENTS, RINGS);
