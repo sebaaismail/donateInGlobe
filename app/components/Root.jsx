@@ -99,7 +99,6 @@ function init() {
   scene.add(globe);
 
   //scene.add(cube);
-
   //Let's create our globe using TextureLoader
 
   // instantiate a loader
